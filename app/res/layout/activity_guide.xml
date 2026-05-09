@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="com.example.mdjb.GuideActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guide Bien-être"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="💤 Sommeil"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:layout_marginBottom="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="15dp">
+            <ImageView android:layout_width="35dp" android:layout_height="35dp" app:srcCompat="@drawable/happy"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" 8h+" android:layout_marginEnd="15dp"/>
+            <ImageView android:layout_width="35dp" android:layout_height="30dp" app:srcCompat="@drawable/neutral"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" 6h" android:layout_marginEnd="15dp"/>
+            <ImageView android:layout_width="35dp" android:layout_height="35dp" app:srcCompat="@drawable/sad"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" 4h-"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="💧 Eau"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:layout_marginBottom="5dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="15dp">
+            <ImageView android:layout_width="35dp" android:layout_height="35dp" app:srcCompat="@drawable/happy"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" 2L+" android:layout_marginEnd="15dp"/>
+            <ImageView android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/neutral"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" 1L" android:layout_marginEnd="15dp"/>
+            <ImageView android:layout_width="35dp" android:layout_height="35dp" app:srcCompat="@drawable/sad"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" -1L"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🥗 Nutrition"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:layout_marginBottom="5dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="15dp">
+            <ImageView android:layout_width="35dp" android:layout_height="35dp" app:srcCompat="@drawable/happy"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" Top" android:layout_marginEnd="15dp"/>
+            <ImageView android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/neutral"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" Moyen" android:layout_marginEnd="15dp"/>
+            <ImageView android:layout_width="35dp" android:layout_height="35dp" app:srcCompat="@drawable/sad"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" Mal"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🏃 Activité"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:layout_marginBottom="5dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="15dp">
+            <ImageView android:layout_width="35dp" android:layout_height="35dp" app:srcCompat="@drawable/happy"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" Actif" android:layout_marginEnd="15dp"/>
+            <ImageView android:layout_width="30dp" android:layout_height="35dp" app:srcCompat="@drawable/neutral"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" Moyen" android:layout_marginEnd="15dp"/>
+            <ImageView android:layout_width="35dp" android:layout_height="35dp" app:srcCompat="@drawable/sad"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" Aucun"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⚡ Énergie"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:layout_marginBottom="5dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="50dp">
+            <ImageView android:layout_width="35dp" android:layout_height="35dp" app:srcCompat="@drawable/happy"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" High" android:layout_marginEnd="15dp"/>
+            <ImageView android:layout_width="30dp" android:layout_height="35dp" app:srcCompat="@drawable/neutral"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" Mid" android:layout_marginEnd="15dp"/>
+            <ImageView android:layout_width="35dp" android:layout_height="35dp" app:srcCompat="@drawable/sad"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" Low"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Retour"
+            android:layout_marginStart="285dp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

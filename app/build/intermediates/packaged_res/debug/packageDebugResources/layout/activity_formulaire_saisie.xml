@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saisie du Jour"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="💤 Sommeil"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:layout_marginBottom="5dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="15dp">
+            <ImageButton android:id="@+id/btn_sleep_happy" android:layout_width="40dp" android:layout_height="40dp" android:background="@android:color/transparent" android:scaleType="fitCenter" app:srcCompat="@drawable/happy"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" " android:layout_marginEnd="15dp"/>
+            <ImageButton android:id="@+id/btn_sleep_neutral" android:layout_width="40dp" android:layout_height="40dp" android:background="@android:color/transparent" android:scaleType="fitCenter" app:srcCompat="@drawable/neutral"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" " android:layout_marginEnd="15dp"/>
+            <ImageButton android:id="@+id/btn_sleep_sad" android:layout_width="40dp" android:layout_height="40dp" android:background="@android:color/transparent" android:scaleType="fitCenter" app:srcCompat="@drawable/sad"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="💧 Eau"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:layout_marginBottom="5dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="15dp">
+            <ImageButton android:id="@+id/btn_water_happy" android:layout_width="40dp" android:layout_height="40dp" android:background="@android:color/transparent" android:scaleType="fitCenter" app:srcCompat="@drawable/happy"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" " android:layout_marginEnd="15dp"/>
+            <ImageButton android:id="@+id/btn_water_neutral" android:layout_width="40dp" android:layout_height="40dp" android:background="@android:color/transparent" android:scaleType="fitCenter" app:srcCompat="@drawable/neutral"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" " android:layout_marginEnd="15dp"/>
+            <ImageButton android:id="@+id/btn_water_sad" android:layout_width="40dp" android:layout_height="40dp" android:background="@android:color/transparent" android:scaleType="fitCenter" app:srcCompat="@drawable/sad"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🥗 Nutrition"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:layout_marginBottom="5dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="15dp">
+            <ImageButton android:id="@+id/btn_nutrition_happy" android:layout_width="40dp" android:layout_height="40dp" android:background="@android:color/transparent" android:scaleType="fitCenter" app:srcCompat="@drawable/happy"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" " android:layout_marginEnd="15dp"/>
+            <ImageButton android:id="@+id/btn_nutrition_neutral" android:layout_width="40dp" android:layout_height="40dp" android:background="@android:color/transparent" android:scaleType="fitCenter" app:srcCompat="@drawable/neutral"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" " android:layout_marginEnd="15dp"/>
+            <ImageButton android:id="@+id/btn_nutrition_sad" android:layout_width="40dp" android:layout_height="40dp" android:background="@android:color/transparent" android:scaleType="fitCenter" app:srcCompat="@drawable/sad"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🏃 Activité"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:layout_marginBottom="5dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="15dp">
+            <ImageButton android:id="@+id/btn_activity_happy" android:layout_width="40dp" android:layout_height="40dp" android:background="@android:color/transparent" android:scaleType="fitCenter" app:srcCompat="@drawable/happy"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" " android:layout_marginEnd="15dp"/>
+            <ImageButton android:id="@+id/btn_activity_neutral" android:layout_width="40dp" android:layout_height="40dp" android:background="@android:color/transparent" android:scaleType="fitCenter" app:srcCompat="@drawable/neutral"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" " android:layout_marginEnd="15dp"/>
+            <ImageButton android:id="@+id/btn_activity_sad" android:layout_width="40dp" android:layout_height="40dp" android:background="@android:color/transparent" android:scaleType="fitCenter" app:srcCompat="@drawable/sad"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⚡ Energie"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:layout_marginBottom="5dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="15dp">
+            <ImageButton android:id="@+id/btn_energy_happy" android:layout_width="40dp" android:layout_height="40dp" android:background="@android:color/transparent" android:scaleType="fitCenter" app:srcCompat="@drawable/happy"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" " android:layout_marginEnd="15dp"/>
+            <ImageButton android:id="@+id/btn_energy_neutral" android:layout_width="40dp" android:layout_height="40dp" android:background="@android:color/transparent" android:scaleType="fitCenter" app:srcCompat="@drawable/neutral"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" " android:layout_marginEnd="15dp"/>
+            <ImageButton android:id="@+id/btn_energy_sad" android:layout_width="40dp" android:layout_height="40dp" android:background="@android:color/transparent" android:scaleType="fitCenter" app:srcCompat="@drawable/sad"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="💬 Note (Optionnel)"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:layout_marginBottom="5dp"/>
+        <EditText
+            android:id="@+id/edit_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Comment s'est passée ta journée ?"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ENREGISTRER"
+            android:backgroundTint="#FF9800"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
