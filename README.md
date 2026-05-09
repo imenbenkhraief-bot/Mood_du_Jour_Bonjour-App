@@ -17,12 +17,6 @@
 
 ---
 
-## 📱 Screenshots
-
-> _Add screenshots of each activity here once the app is running._
-
----
-
 ## 🏗️ Architecture
 
 The app follows a **3-Tier architecture**:
